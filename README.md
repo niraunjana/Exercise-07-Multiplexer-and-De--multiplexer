@@ -49,12 +49,13 @@ If the control input changes to AB = 10, then all the gates are restricted excep
 
  
  
-## PROCEDURE
-Start the module using module projname().
-Declare the inputs and outputs along with the select lines according to the multiplexer and demultiplexer.
-Use wire to assign intermediate outputs.
-Use and,or and not gates to get the desired output.
-End the module.
+## PROCEDURE:
+
+1. Start the module using module projname().
+2. Declare the inputs and outputs along with the select lines according to the multiplexer and demultiplexer.
+3. Use wire to assign intermediate outputs.
+4. Use and,or and not gates to get the desired output.
+5. End the module.
 Generate RTL realization and timing diagrams.
 
 
@@ -62,8 +63,8 @@ Generate RTL realization and timing diagrams.
 ##  PROGRAMS:
 ```
 Program for muliplexer  and verify its truth table in quartus using Verilog programming.
-Developed by: SASIDEVI.V
-RegisterNumber: 22008940
+Developed by: NIRAUNJANA GAYATHRI
+RegisterNumber: 22008369
 ```
 ```
 module mux(I0,I1,I2,I3,S0,S1,Y);
@@ -83,8 +84,8 @@ endmodule
 
 ```
 Program for 1X4 DeMultiplexer and verify its truth table in quartus using Verilog programming.
-Developed by: SASIDEVI.V
-RegisterNumber: 22008940
+Developed by: NIRAUNJANA GAYATHRI G R
+RegisterNumber: 22008369
 
 module demux(I,S0,S1,Y0,Y1,Y2,Y3);
 input I,S0,S1;
@@ -99,11 +100,13 @@ and(Y3,I,S0,S1);
 endmodule
 ```
 ## RTL LOGIC :
+
 ### 4x1 MULTIPLEXER:
 ![](/1.png)
 ### 1X4 DE-MULTIPLEXER:
 ![](/2.png)
-## TIMING DIGRAMS:
+
+## TIMING DIAGRAMS:
 ### 4X1 MULTIPLEXER:
 ![](/3.png)
 ![](/4.png)
@@ -111,10 +114,14 @@ endmodule
 ![](/6.png)
 ### 1X4 DE-MULTIPLEXER:
 ![](/7.png)
+
 ## TRUTH TABLE:
+
 ### 4X1 MULTIPLEXER:
 ![](/8.png)
 ### 1X4 DE-MULTIPLEXER:
 ![](/9.png)
+
 ## RESULTS:
+
 Hence 4x1 Multiplexer and 1x4 Demultiplexer is been implemented and verified using verilog programming and its output are validated.
